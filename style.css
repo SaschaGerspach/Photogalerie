@@ -1,0 +1,139 @@
+body {
+  background-color: black;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+nav {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.displayPhotos {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.singlePhoto {
+  transition: all 300ms ease-in-out;
+  height: 400px;
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.singlePhoto:hover {
+  filter: grayscale(50%);
+  transform: scale(1.1);
+
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.blackBackground {
+  background-color: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.arrow {
+  margin: 20px;
+  height: 40px;
+  width: 40px;
+}
+
+.bigPhoto {
+  max-height: 100vh;
+  max-width: 90%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.buttonWithImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diashowButton {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1250px) {
+  .blackBackground {
+    flex-direction: column;
+  }
+
+  .singlePhoto {
+    max-width: 100%;
+  }
+
+  .bigPhoto {
+    max-height: 85%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .singlePhoto {
+    height: 300px;
+    max-width: 450px;
+  }
+
+  .displayPhotos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .singlePhoto {
+    height: 200px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 330px) {
+  .singlePhoto {
+    height: 150px;
+    max-width: 225px;
+  }
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body onload="includeHTML(); photos();">
+    <header><nav w3-include-html="nav.html"></nav></header>
+    <section>
+    <div id="displayPhotos" class="displayPhotos"></div>
+    <div onclick="photos()" id="blackBackground" class="blackBackground"></div>
+  </section>
+  </body>
+</html>
